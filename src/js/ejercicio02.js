@@ -1,10 +1,7 @@
-const base = prompt("Ingrese la base del triángulo:");
-const altura = prompt("Ingrese la altura del triángulo:");
+import { calcularAreaTriangulo } from '../services/service02.js';
 
-//Calcular area de un triángulo a partir de su base y altura.
-function calcularAreaTriangulo(base, altura) {
-    return (base * altura) / 2;
-}
+const base = parseFloat(prompt("Ingrese la base del triángulo:"));
+const altura = parseFloat(prompt("Ingrese la altura del triángulo:"));
 
 if (isNaN(base) || isNaN(altura)) {
     alert("Por favor, ingrese valores numéricos válidos para la base y la altura.");
