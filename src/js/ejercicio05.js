@@ -21,4 +21,6 @@ botonCalcular.addEventListener('click', (evento) => {
 
   calcularRendimiento(total, correctas, resultadoDiv);
   console.log(resultadoDiv.textContent);
+  totalInput.value = '';
+  correctasInput.value = '';
 });
